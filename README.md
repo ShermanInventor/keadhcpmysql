@@ -1,4 +1,6 @@
-The startup file is start-dhcp-server.sh. Make sure its in the same directory as your Dockerfile. The startup file has "keactrl start && tail -f /dev/null"
+The startup file is start-dhcp-server.sh. Make sure its in the same directory as your Dockerfile. 
+
+The startup file has "keactrl start && tail -f /dev/null"
 
 docker run --name=keadhcpserver --net=host -v /opt/kea-dhcp/kea:/usr/local/etc/kea -d keadhcpmysql:1.0
 
