@@ -14,6 +14,8 @@ Copy that sql script to a folder. In this example below I called my folder maria
 need to modify the SQL script to create the database and also add a SQL script to create a user that
 can access that database. I have included everything in GitHub
 
+docker run --name kea-dhcp-mariadb -v /opt/kea-dhcp/mariadb-entrypoint:/docker-entrypoint-initdb.d -p 3306:3306 --env MYSQL_ROOT_PASSWORD=secret -d mariadb:latest
+
 ISC Kea wants you to pay for their host API so they have little docs on this part. 
 Here is a what got me started its an old doc but works on all versions 
 https://oldkea.isc.org/wiki/HostReservationsHowTo
