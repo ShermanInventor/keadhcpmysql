@@ -1,3 +1,5 @@
+This is a Kea-DHCP 1.6.1 server with MySQL support. It was compiled with MariaDB 10.3 libraries.
+
 The startup file is start-dhcp-server.sh. Make sure its in the same directory as your Dockerfile. 
 
 The startup file has "keactrl start && tail -f /dev/null"
